@@ -16,9 +16,9 @@ const server = restify.createServer({
 var knex = require('knex')({
   client: 'mysql',
   connection: {
-    host : '127.0.0.1',
-    user : 'root',
-    password : '',
+    host : 'mysql://mysql:3306/',
+    user : 'openshift',
+    password : 'mysql10102020',
     database : 'db'
   }
 });
